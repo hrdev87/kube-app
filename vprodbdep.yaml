@@ -34,7 +34,7 @@ spec:
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
-            volumeID: vol-0af7a4caf62bfb64c
+            volumeID: vol-058cfcd8006d5a98f
             fsType: ext4
       
       initContainers:
@@ -44,7 +44,4 @@ spec:
           volumeMounts:
             - name: vpro-db-data
               mountPath: /var/lib/mysql
-
-
-
 
